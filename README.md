@@ -46,8 +46,6 @@ Anything in `specs/` that originated upstream remains the work of its original a
 
 The upstream `warpdotdev/workflows` repository is licensed under the **Apache License 2.0**. Because this project is a fork, that license and its `NOTICE`/attribution requirements continue to apply to all upstream-derived content.
 
-> ⚠️ **TODO before merging the upstream fork:** the placeholder `LICENSE` file currently in this repo is MIT. Before pulling in the upstream history, this should be replaced with (or supplemented by) the upstream Apache-2.0 `LICENSE` and any `NOTICE` file, so attribution is preserved correctly. Original-authored additions by `thebardchat` will also be released under Apache-2.0 to stay compatible.
-
 ## Status
 
 🚧 **Pre-fork scaffolding.** Right now this repo only contains the README, CLAUDE.md, and a placeholder license. The actual workflow content from `warpdotdev/workflows` will be merged in next.
