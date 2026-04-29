@@ -1,0 +1,24 @@
+---
+name: Sync fork's branch with upstream
+command: |-
+    git fetch upstream --tags
+    git checkout {{branch}}
+    git merge --ff-only upstream/{{branch}}
+    git push origin {{branch}}
+tags:
+  - git
+description: |-
+    Syncs a branch in your fork with the same branch in the upstream repository (the
+    project you forked from). Uses --ff-only so the merge will refuse rather than
+    create a merge commit if your fork has diverged, which is the safe behavior
+    recommended by GitHub for keeping a fork in sync. Requires a remote named
+    "upstream" pointing at the original project, e.g.
+    `git remote add upstream https://github.com/owner/repo.git`.
+arguments:
+  - name: branch
+    description: The branch to sync. Must exist on both your fork and upstream.
+    default_value: main
+source_url: ""
+author: thebardchat
+author_url: "https://github.com/thebardchat"
+shells: []

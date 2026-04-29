@@ -45,6 +45,15 @@ This is a fork of someone else's open-source work. Be careful to preserve credit
 
 The user develops on feature branches like `claude/<topic>-<slug>`. Don't push to `main` directly. When in doubt, ask which branch to use.
 
+## Contributor info (for upstream PRs)
+
+When opening a pull request upstream to `warpdotdev/workflows`, fill in their PR template using:
+
+- **Discord username:** `ShaneBrainLegacy` (Shane's primary Discord handle; he has two others but this is the canonical one for upstream credit)
+- **Description of changes:** auto-generate from the actual diff — list new spec paths, then existing-spec edits, then any tooling/doc changes, in that order. One bullet per file.
+
+Don't ask the user to re-confirm the Discord handle every time; just include it. If he ever wants it changed or omitted, he'll say so.
+
 ## Tone for the user
 
 The user is new to forking other people's projects and cares about giving proper credit. When you propose changes, briefly call out anything that might affect attribution, license compatibility, or upstream-merge friendliness, so they can decide before you act.
